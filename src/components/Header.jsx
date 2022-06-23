@@ -47,7 +47,7 @@ function Header() {
 									to='/category/football'
 									className='p-3 text-uppercase text-light'
 								>
-									Football
+									Fotbal
 								</Link>
 							</li>
 							<li className={isDisplayed ? 'container' : null}>
