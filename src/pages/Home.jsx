@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import { getNewsList } from '../api/adaptors'
 import { getNewsCategoriesEndpoint } from '../api/endpoints'
-import Layout from '../components/Layout'
-import { useFetch } from '../utils/hooks/useFetch'
-import NewsCardsList from '../components/NewsCardsList'
-import { Link } from 'react-router-dom'
 import { FavoritesContext } from '../store/Favorites/context'
+import { useFetch } from '../utils/hooks/useFetch'
+import Layout from '../components/Layout'
+import NewsCardsList from '../components/NewsCardsList'
 
 const Home = () => {
 	const { favoritesState } = useContext(FavoritesContext)

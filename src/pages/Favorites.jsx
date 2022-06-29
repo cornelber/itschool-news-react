@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { Container } from 'react-bootstrap'
+import { FavoritesContext } from '../store/Favorites/context'
 import Layout from '../components/Layout'
 import NewsCardsList from '../components/NewsCardsList'
-import { FavoritesContext } from '../store/Favorites/context'
 import styles from './Favorites.module.css'
 
 const Favorites = () => {

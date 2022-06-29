@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Container, Row, Col, Button, Alert } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import { useFetch } from '../utils/hooks/useFetch'
@@ -12,11 +12,10 @@ import styles from './NewsDetails.module.css'
 
 const NewsDetails = () => {
 	const { favoritesState, favoritesDispatch } = useContext(FavoritesContext)
-	const [alertVision, setAlertVision] = useState(true)
+	const [alertVision, setAlertVision] = useState(false)
 
 	const { newsId, '*': RestOfURL } = useParams()
 	const completeNewsId = `${newsId}/${RestOfURL}`
-
 	const newsItemEndpoint = getNewsDetailsEndpoint(completeNewsId)
 	const newsDetails = useFetch(newsItemEndpoint)
 	const adaptedNewsDetails = getNewsDetails(newsDetails)
@@ -48,11 +47,11 @@ const NewsDetails = () => {
 			: addToFavorites(newsObj)
 		favoritesDispatch(actionResult)
 
-		setAlertVision(false)
+		setAlertVision(true)
 	}
 
 	setTimeout(() => {
-		setAlertVision(true)
+		setAlertVision(false)
 	}, 2000)
 
 	return (
@@ -89,11 +88,9 @@ const NewsDetails = () => {
 				</Row>
 			</Container>
 			{alertVision ? (
-				''
-			) : (
-				<div className={`${styles.alertContainer}`}>
+				<div className='alertContainer'>
 					<Alert
-						id={`${styles.alertNotification}`}
+						id='alertNotification'
 						variant={isFavorite(id) ? 'success' : 'danger'}
 					>
 						{isFavorite(id)
@@ -101,6 +98,8 @@ const NewsDetails = () => {
 							: 'Succes! Ai șters știrea din secțiunea Favorite'}
 					</Alert>
 				</div>
+			) : (
+				''
 			)}
 		</Layout>
 	)

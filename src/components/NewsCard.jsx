@@ -7,7 +7,6 @@ import styles from './NewsCard.module.css'
 
 const NewsCard = props => {
 	const { favoritesDispatch } = useContext(FavoritesContext)
-
 	const { id, thumbnail, title, description, hasCloseButton } = props
 
 	const handleRemoveFromFavorites = () => {

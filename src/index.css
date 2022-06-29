@@ -35,6 +35,40 @@ a:hover {
 	color: inherit;
 }
 
+/* Alert Styles */
+.alertContainer {
+	position: fixed;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 50px;
+	z-index: 5;
+}
+
+#alertNotification {
+	width: fit-content;
+}
+
+/* Scroll Button */
+#scrollBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: var(--bg-primary);
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 /* Customizam Bootstrap: */
 .btn:focus {
 	outline: none !important;

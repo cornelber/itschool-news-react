@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The news database is taken from the [Guardian API](https://open-platform.theguardian.com/documentation/) as endpoint was used Content and Single Item. The functionality itself is to offer the user the possibility to access different sections with particular news and the possibility to save the desired news in favorites.
 
+[Demo Live](https://bcitschoolnews.netlify.app/)
+
 ## Table of contents
 
 -   About project
@@ -28,6 +30,7 @@ Among the main features are:
 -   Save in localStorage and delete respectively from localStorage
 -   Alert notification when adding and deleting from Favorites
 -   Display a maximum of 3 news from Favorites on the Home page
+-   Scroll to Top Button on each page
 
 ## Languages and Tools
 
