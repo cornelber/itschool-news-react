@@ -1,0 +1,39 @@
+.newsDetails img {
+	width: 100%;
+	height: auto;
+}
+
+.newsDetails a {
+	color: var(--text-secondary);
+}
+
+.newsDetails a:hover {
+	color: var(--text-secondary);
+	text-decoration: underline;
+}
+
+.newsDetails iframe[src*='youtube'] {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+
+.newsDetails figcaption {
+	font-size: 0.875rem;
+}
+
+.alertContainer {
+	position: fixed;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 50px;
+	z-index: 5;
+}
+
+#alertNotification {
+	width: fit-content;
+}

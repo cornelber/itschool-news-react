@@ -35,6 +35,14 @@ const NewsCategory = () => {
 			title = 'Fotbal'
 			break
 		}
+		case 'business': {
+			title = 'Afaceri'
+			break
+		}
+		case 'film': {
+			title = 'Film'
+			break
+		}
 		default: {
 			title = ''
 			break

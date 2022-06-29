@@ -25,12 +25,14 @@ export const getNewsDetails = apiResponse => {
 	const rawNewsDetails = apiResponse.response.content
 
 	const adaptedNewsDetails = {
+		id: rawNewsDetails.id,
 		title: rawNewsDetails.webTitle,
 		description: rawNewsDetails.fields.trailText,
 		image: rawNewsDetails.fields.main,
 		author: rawNewsDetails.fields.byline,
 		date: rawNewsDetails.webPublicationDate,
 		content: rawNewsDetails.fields.body,
+		thumbnail: rawNewsDetails.fields.thumbnail,
 	}
 
 	return adaptedNewsDetails

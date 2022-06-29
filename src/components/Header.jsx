@@ -16,7 +16,7 @@ function Header() {
 	}
 
 	return (
-		<header>
+		<header className={`${styles.header}`}>
 			<nav className={`${styles.nav} bg-primary w-100`}>
 				<Container className='d-flex justify-content-between align-items-center'>
 					<Link to='/' className='p-3'>
@@ -48,6 +48,22 @@ function Header() {
 									className='p-3 text-uppercase text-light'
 								>
 									Fotbal
+								</Link>
+							</li>
+							<li className={isDisplayed ? 'container' : null}>
+								<Link
+									to='/category/business'
+									className='p-3 text-uppercase text-light'
+								>
+									Afaceri
+								</Link>
+							</li>
+							<li className={isDisplayed ? 'container' : null}>
+								<Link
+									to='/category/film'
+									className='p-3 text-uppercase text-light'
+								>
+									Film
 								</Link>
 							</li>
 							<li className={isDisplayed ? 'container' : null}>

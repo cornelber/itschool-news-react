@@ -1,7 +1,7 @@
 /* Adaugam variabile globale: */
 :root {
 	--text-primary: #101d42;
-	--text-secondary: #fbb44c;
+	--text-secondary: #2bb686;
 	--text-dark: #2b2922;
 	--text-light: #eaeaea;
 
@@ -27,7 +27,6 @@ ul {
 }
 
 a {
-	display: block;
 	text-decoration: none;
 	color: inherit;
 }
@@ -37,9 +36,14 @@ a:hover {
 }
 
 /* Customizam Bootstrap: */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn:focus {
+	outline: none !important;
+	box-shadow: none;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
 	background-color: #2bb686;
 	border-color: #2bb686;
 }
@@ -49,7 +53,7 @@ a:hover {
 }
 
 .text-secondary {
-	color: #fbb44c !important;
+	color: #2bb686 !important;
 }
 
 .text-light {

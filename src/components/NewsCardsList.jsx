@@ -17,9 +17,11 @@ const NewsCardsList = props => {
 					>
 						<NewsCard
 							key={newsItem.id}
+							id={newsItem.id}
 							thumbnail={newsItem.thumbnail}
 							title={newsItem.title}
 							description={newsItem.description}
+							hasCloseButton={newsItem.hasCloseButton}
 						/>
 					</Col>
 				))}
