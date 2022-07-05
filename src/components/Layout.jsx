@@ -18,6 +18,7 @@ const Layout = props => {
 			}
 		})
 	})
+
 	return (
 		<div className={styles.contentWrapper}>
 			<Header />

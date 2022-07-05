@@ -4,6 +4,7 @@ import NewsCard from './NewsCard'
 
 const NewsCardsList = props => {
 	const { news } = props
+
 	return (
 		<Container>
 			<Row>

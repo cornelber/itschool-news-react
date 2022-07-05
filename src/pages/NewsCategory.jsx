@@ -10,7 +10,6 @@ import NewsCardsList from '../components/NewsCardsList'
 
 const NewsCategory = () => {
 	const { categoryId } = useParams()
-
 	const queryParams = new URLSearchParams(useLocation().search)
 	let currentPage = queryParams.get('page')
 
